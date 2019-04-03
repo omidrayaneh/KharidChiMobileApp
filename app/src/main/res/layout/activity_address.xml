@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.omidrayaneh.omid.kharidchi.activity.SingUpActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_singup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="40dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:gravity="center_horizontal"
+            android:inputType="textCapWords"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp"
+            android:text="@string/fill_address"
+            android:textColor="@android:color/white"
+            android:textSize="14dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/stateSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="sans-serif-light"
+                android:padding="5dp"
+                android:textColor="@color/colorPrimary"
+                android:background="@color/textColorPrimary"
+                android:autofillHints="state"
+                android:spinnerMode="dialog"
+                />
+            <Spinner
+                android:id="@+id/townSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="sans-serif-light"
+                android:padding="5dp"
+                android:textColor="@color/colorPrimary"
+                android:background="@color/textColorPrimary"
+                android:spinnerMode="dialog"
+                />
+
+            <EditText
+                android:id="@+id/txtFullAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@android:color/white"
+                android:fontFamily="sans-serif-light"
+                android:hint="@string/full_address"
+                android:padding="5dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/txtAddressPhone"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:fontFamily="sans-serif-light"
+                android:hint="@string/phone"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:padding="5dp"
+                android:textColor="@color/colorPrimary"
+                android:textCursorDrawable="@null"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_save_address"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/lbl_save"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="60dp"
+        android:indeterminateTint="@color/colorAccent"
+        android:indeterminateTintMode="src_atop"
+        android:visibility="gone" />
+
+
+
+</RelativeLayout>

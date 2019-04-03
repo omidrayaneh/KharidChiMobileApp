@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3b5bb3</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#ea5d88</color>
+
+    <color name="bg_view_sms">#ffd423</color>
+    <color name="bg_view_otp">#fc6d38</color>
+    <color name="main_background">#ecf0ff</color>
+
+
+    <color name="msg_no_notes">#999</color>
+    <color name="hint_enter_note">#89c3c3c3</color>
+    <color name="timestamp">#858585</color>
+    <color name="note_list_text">#232323</color>
+
+    <color name="black">#000000</color>
+    <color name="red">#ff0000</color>
+
+    <color name="empty">#ff8171</color>
+    <color name="add_to_card">#04be96</color>
+    <color name="_try">#79aec9</color>
+    <color name="RED">#ff0000</color>
+
+</resources>

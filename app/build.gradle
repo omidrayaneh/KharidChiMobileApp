@@ -1,0 +1,86 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'key_KC2018'
+            keyPassword 'os1355hh1346az1372az1379'
+            storeFile file('E:/1397/KharidChi/key.jks')
+            storePassword 'os1355hh1346az1372az1379'
+        }
+    }
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.omidrayaneh.omid.kharidchi"
+        minSdkVersion 17
+        targetSdkVersion 27
+        versionCode 10
+        versionName "1.0.2.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.config
+        multiDexEnabled true
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+    buildToolsVersion '28.0.3'
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    dexOptions {
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.mcxiaoke.volley:library:1.0.19'
+    implementation 'com.squareup.retrofit2:retrofit:2.2.0'
+    implementation 'com.github.ViksaaSkool:AwesomeSplash:v1.0.0'
+    implementation 'com.github.bumptech.glide:glide:3.6.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.loopj.android:android-async-http:1.4.9'
+    implementation 'org.jsoup:jsoup:1.8.3'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'com.daimajia.slider:library:1.1.5@aar'
+    implementation 'com.googlecode.json-simple:json-simple:1.1'
+    // JSON Parsing
+    implementation 'com.google.code.gson:gson:2.8.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.2.0'
+    implementation 'com.ss.bannerslider:bannerslider:2.0.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.michaelmuenzer.android:ScrollableNumberPicker:0.2.2'
+    implementation 'com.miguelcatalan:materialsearchview:1.4.0'
+    //pushe
+    //implementation 'co.ronash.android:pushe-base:1.4.0'
+    implementation 'co.ronash.android:pushe-base:1.6.0'
+    implementation 'com.android.support:multidex:1.0.3'
+
+
+    implementation 'com.google.android.gms:play-services-gcm:16.0.0'
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+    //CircleImageView
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    //search
+    implementation 'com.github.mancj:MaterialSearchBar:0.7.6'
+    implementation 'com.miguelcatalan:materialsearchview:1.4.0'
+    //zoom image
+    implementation 'com.github.chrisbanes:PhotoView:2.1.3'
+}

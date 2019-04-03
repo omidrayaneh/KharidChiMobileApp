@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">خریدچی</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="nav_header_title" translatable="false">Android Studio</string>
+    <string name="nav_header_subtitle" translatable="false">09140000000</string>
+    <string name="nav_header_desc" translatable="false">Navigation header</string>
+    <string name="title_activity_sms" translatable="false">SmsActivity</string>
+    <string name="title_activity_card_new" translatable="false">CardNewActivity</string>
+    <string name="title_activity_card" translatable="false">CardActivity</string>
+    <string name="title_activity_buy" translatable="false">BuyActivity</string>
+    <string name="title_activity_detaile" translatable="false">DetaileActivity</string>
+    <string name="action_logout">خروج</string>
+    <string name="msg_enter_mobile">برای شروع شماره موبایل خود را وارد کنید!</string>
+    <string name="msg_enter_pass">برای ورود رمز  خود را وارد کنید!</string>
+    <string name="lbl_name">نام</string>
+    <string name="lbl_family">نام خانوادگی</string>
+    <string name="lbl_mobile">تلفن همراه</string>
+    <string name="lbl_pass">رمز ورود</string>
+    <string name="lbl_next">بعدی</string>
+    <string name="msg_sit_back">منتظر بمانید!کد موقت به همراهتان ارسال خواهد شد</string>
+    <string name="msg_manual_otp">رمز موقت را در کادرپایین وارد کنید</string>
+    <string name="lbl_enter_otp">رمز موقت</string>
+    <string name="lbl_submit">تایید</string>
+    <string name="action_settings">تنظیمات</string>
+    <string name="fill_msg">برای عضویت مشخصات خود را وارد کنید</string>
+    <string name="lbl_repass">تکرار رمز ورود</string>
+    <string name="lbl_forgot_paswword">رمز ورود را فراموش کرده اید؟</string>
+    <string name="fill_new_pass_msg">رمز جدید را وارد کنید</string>
+    <string name="fill_address">آدرس</string>
+    <string name="lbl_save">ذخیره</string>
+    <string name="full_address">آدرس کامل</string>
+    <string name="phone">تلفن</string>
+    <string name="saved_factor">فاکتور شما با موفقیت ثبت شد</string>
+    <string name="title_activity_error_report">ارسال گزارش</string>
+    <string name="title_activity_report">گزارش خرید</string>
+    <string name="fill_value">لطفا جزییات را وارد کنید</string>
+    <string name="card_empty">لیست خرید خالی است!</string>
+    <string name="sure_buy">آیا از خرید اطمینان دارید!</string>
+    <string name="yes">بله</string>
+    <string name="no">نه</string>
+    <string name="mobile_null">رمز ورود خالیست</string>
+    <string name="incorrect_pass">رمز ورود اشتباه است!دوباره سعی کنید</string>
+    <string name="lost_pass">رمز ورود اشتباه است</string>
+    <string name="tanks">متشکریم</string>
+    <string name="otp_wrong">رمز موقت اشتباه است!دوباره سعی کنید</string>
+    <string name="less_pass">رمز عبور باید حداقل 6  حرفی باشد</string>
+    <string name="acount_block">حساب کاربری شما مسدود است!</string>
+    <string name="blocked"><![CDATA[      با پشتیبانی تماس بگیرید]]></string>
+    <string name="english">انگلیسی</string>
+    <string name="persain">فارسی</string>
+    <string name="sing_in">ورود</string>
+    <string name="exit_user">آیا می خواهید از حساب کاربری خود خارج شوید؟</string>
+    <string name="wait">صبر کنید …</string>
+    <string name="pass_not_null">رمز ورود خالیست!</string>
+    <string name="retaype_pass">تکرار رمز ورود</string>
+    <string name="null_otp">رمز موقت خالیست!</string>
+    <string name="opt_less">رمز موقت کمتر از 6 حرف می باشد</string>
+    <string name="less_mobile">شماره مبایل باید 11 حرفی باشد</string>
+    <string name="tanks_reg">از ثبت نام شما متشکریم</string>
+    <string name="puech_record">گزارش خرید</string>
+    <string name="null_fild">مقادیر خالیست!</string>
+    <string name="less_name">نام یا نام خانوادگی کمتر از 3 حرف است</string>
+    <string name="repass">تکرار رمز</string>
+    <string name="not_mobile">شماره تلفن همراه اشتباه است</string>
+    <string name="wrong_mobile">شماره تلفن همراه اشتباه است</string>
+    <string name="omidrayaneh">امیدرایانه</string>
+    <string name="kharidchi">خریدچی</string>
+    <string name="no_internet">اتصال به اینترنت برقرار نیست بعدا تلاش کنید</string>
+    <string name="total">مبلغ</string>
+    <string name="confirm_purch">تایید خرید</string>
+    <string name="list_is_empty">لیست خالیست!</string>
+    <string name="product">نام کالا</string>
+    <string name="qty">تعداد</string>
+    <string name="textprice">قیمت</string>
+    <string name="state">استان</string>
+    <string name="town">شهر</string>
+    <string name="address">آدرس</string>
+    <string name="total_buy">مبلغ فاکتور :\u0020</string>
+    <string name="save">ذخیره</string>
+    <string name="details_name">جزییات</string>
+    <string name="detals_value">شرح</string>
+    <string name="type_report_or_suggestions">گزارش خطا و یا پیشنهاد و انتقاد</string>
+    <string name="post_your_report_or_suggestions_below">اینجا بنویسید</string>
+    <string name="sample_title">نام</string>
+    <string name="more">بیشتر</string>
+    <string name="sample_price">قیمت</string>
+    <string name="add">افزودن +</string>
+    <string name="tap_to_login">برای وارد شدن ضربه بزنید</string>
+    <string name="invoiceid">شماره</string>
+    <string name="date"> تاریخ : </string>
+    <string name="price">مبلغ</string>
+    <string name="status">وضعیت</string>
+    <string name="invoice_number">شماره سفارش :</string>
+    <string name="invoice_status">وضعیت سفارش :</string>
+    <string name="total_invoice">\u0020مبلغ فاکتور :\u0020</string>
+    <string name="total_invoice_without_discount">\u0020 مبلغ قابل پرداخت :\u0020</string>
+    <string name="shipp">هزینه ارسال :\u0020</string>
+    <string name="toman">تومان</string>
+    <string name="delivery">تحویل داده شد</string>
+    <string name="nonDelivery">برگشت داده شد</string>
+    <string name="sent">ارسال شد</string>
+    <string name="suspend">در حال بررسی</string>
+    <string name="send_error_report">ارسال نظرها و پیشنهادها</string>
+    <string name="about_us">درباره ما</string>
+    <string name="invoice_product">لیست کالا های فاکتور شما</string>
+    <string name="toatal_invoice">مبلغ فاکتور شما</string>
+    <string name="your_address">آدرس شما</string>
+    <string name="action_account">حساب کاربری</string>
+    <string name="cart">لیست خرید</string>
+    <string name="logout">خروج</string>
+    <string name="discont">تخفیف</string>
+    <string name="owner">صاحب</string>
+    <string name="discount">تخفیف :\u0020</string>
+    <string name="owner_by">فروشنده :\u0020</string>
+    <string name="price_whitout_discount">قیمت :\u0020</string>
+    <string name="price_whid_discount">قیمت با تخفیف :\u0020</string>
+    <string name="comming_soon">بزودی!</string>
+    <string name="easy_buy_delivery">خرید آسان - تحویل فوری</string>
+    <string name="phone_about">تلفن :</string>
+    <string name="west_azarbayjan_khoy">آذربایجان غربی - خوی - کوچه میرزا حسنی</string>
+    <string name="address_about">آدرس :</string>
+    <string name="_044_36225242_044_36231539">04436225242 _ 04436231539</string>
+    <string name="save_address">آدرس شما ثبت شد</string>
+    <string name="title_activity_search">جستجو</string>
+    <string name="search">جستجو</string>
+    <string name="title_activity_search_category">SearchCategoryActivity</string>
+    <string name="pay">قابل پرداخت</string>
+    <string name="title_activity_sub_category">SubCategoryActivity</string>
+    <string name="empty_sub_category">محصولی ثبت نشده است!</string>
+    <string name="search_empty">نتیجه جستجو خالیست!</string>
+    <string name="back">برگشت</string>
+    <string name="discountShow">تخفیف</string>
+    <string name="title_activity_message">MessageActivity</string>
+    <string name="message">اطلاعیه ها</string>
+    <string name="messages">اطلاعیه ها</string>
+    <string name="time">زمان</string>
+    <string name="expire_date">تاریخ انقضا :</string>
+    <string name="cancelled">لغو شد</string>
+    <string name="edit_profile">ویرایش پروفایل</string>
+    <string name="title_activity_edit_profile">EditProfileActivity</string>
+</resources>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.omidrayaneh.omid.kharidchi">
+
+    <uses-sdk tools:overrideLibrary="co.ronash.pushe" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <permission
+        android:name="com.omidrayaneh.omid.kharidchi.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.omidrayaneh.omid.kharidchi.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_foreground"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_foreground"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.EditProfileActivity"
+            android:label="@string/title_activity_edit_profile"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.EnterPasswordActivity" />
+        <activity android:name=".activity.SingUpActivity" />
+        <activity android:name=".activity.OtpActivity" />
+        <activity android:name=".activity.ForgotActivity" />
+        <activity android:name=".activity.NewPasswordActivity" />
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.CardActivity"
+            android:label="@string/title_activity_card"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.BuyActivity"
+            android:label="@string/title_activity_buy"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".activity.AddressActivity" />
+        <activity
+            android:name=".activity.ReportActivity"
+            android:label="@string/title_activity_report"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.DetaileActivity"
+            android:label="@string/title_activity_detaile"
+            android:theme="@style/AppTheme" />
+
+        <receiver android:name="co.ronash.pushe.receiver.UpdateReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+
+                <data
+                    android:path="com.omidrayaneh.omid.kharidchi"
+                    android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.omidrayaneh.omid.kharidchi" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="co.ronash.pushe.token"
+            android:value="PUSHE_371019811237" />
+        <meta-data
+            android:name="co.ronash.pushe.cr"
+            android:value="aHR0cDovLzEyZmQ3ZGQ1ZjljZjQ0ODE5YjdhNDczMTBkZTdjNzQ1OmJkYjc1YTYwZWIzNjRiZTY4NTA1OTdlZjI3MDYxN2ZlQGNhLnB1c2hlLmlyLzE4ODAx" />
+
+        <activity
+            android:name=".activity.ErrorReportActivity"
+            android:label="@string/title_activity_error_report"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".activity.AboutActivity" />
+        <activity
+            android:name=".activity.SearchActivity"
+            android:label="@string/title_activity_search"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.SearchCategoryActivity"
+            android:label="@string/title_activity_search_category"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.SubCategoryActivity"
+            android:label="@string/title_activity_sub_category"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".activity.ShowImageActivity" />
+        <activity android:name=".activity.NoInternetActivity" />
+        <activity
+            android:name=".activity.MessageActivity"
+            android:label="@string/title_activity_message"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>
