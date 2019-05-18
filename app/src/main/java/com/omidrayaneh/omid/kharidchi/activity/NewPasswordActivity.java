@@ -45,7 +45,7 @@ public class NewPasswordActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (inputNewpass.length()<6)
                 {
-                    Toast.makeText(getApplicationContext(),"password less more than 6!",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),R.string.less_pass,Toast.LENGTH_SHORT).show();
                     return;
                 }
                 else if (inputNewpass.length()==0 && inputNewrepass.length()==0)

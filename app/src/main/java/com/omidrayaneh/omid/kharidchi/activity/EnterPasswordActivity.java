@@ -56,8 +56,8 @@ public class EnterPasswordActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), R.string.mobile_null,Toast.LENGTH_SHORT).show();
                     return;
                 }
-
-                EnterpassRetrofit(mobile, inputPass.getText().toString());
+                String pass=inputPass.getText().toString();
+                EnterpassRetrofit(mobile, pass);
             }
         });
 
@@ -73,15 +73,17 @@ public class EnterPasswordActivity extends AppCompatActivity {
 
     public void EnterpassRetrofit(final String userMobile, final String userrpass) {
 
-
+        Gson gson = new GsonBuilder()
+                .setLenient()
+                .create();
         Retrofit retrofit = new Retrofit.Builder().baseUrl("http://kharidchi.ir/").
-                addConverterFactory(GsonConverterFactory.create()).build();
+                addConverterFactory(GsonConverterFactory.create(gson)).build();
         userPassManager registerInterface = retrofit.create(userPassManager.class);
         Call call = registerInterface.sendUserpass(userMobile,userrpass);
         call.enqueue(new Callback() {
             @Override
             public void onResponse(Call call, retrofit2.Response response) {
-                String stringRequest = response.body().toString();
+                String stringRequest=new Gson().toJson(response.body());
 
                 if (stringRequest.contains("false")) {
                     // goto sing up page

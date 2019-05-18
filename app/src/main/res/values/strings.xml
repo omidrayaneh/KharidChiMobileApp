@@ -45,7 +45,7 @@
     <string name="lost_pass">رمز ورود اشتباه است</string>
     <string name="tanks">متشکریم</string>
     <string name="otp_wrong">رمز موقت اشتباه است!دوباره سعی کنید</string>
-    <string name="less_pass">رمز عبور باید حداقل 6  حرفی باشد</string>
+    <string name="less_pass">رمز ورود نباید کمتر از 6 کاراکتر باشد</string>
     <string name="acount_block">حساب کاربری شما مسدود است!</string>
     <string name="blocked"><![CDATA[      با پشتیبانی تماس بگیرید]]></string>
     <string name="english">انگلیسی</string>
@@ -54,7 +54,7 @@
     <string name="exit_user">آیا می خواهید از حساب کاربری خود خارج شوید؟</string>
     <string name="wait">صبر کنید …</string>
     <string name="pass_not_null">رمز ورود خالیست!</string>
-    <string name="retaype_pass">تکرار رمز ورود</string>
+    <string name="retaype_pass">تکرار رمز ورود اشتباه است.دوباره سعی کنید</string>
     <string name="null_otp">رمز موقت خالیست!</string>
     <string name="opt_less">رمز موقت کمتر از 6 حرف می باشد</string>
     <string name="less_mobile">شماره مبایل باید 11 حرفی باشد</string>
